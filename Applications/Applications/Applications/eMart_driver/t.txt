@@ -1,0 +1,122 @@
+  // updateDriverOrder() async {
+  //   while (true) {
+  //     await FireStoreUtils.getDriverOrderSetting();
+  //     setState(() {});
+
+  //     // Adjusting start timestamp by subtracting 3 hours
+  //     Timestamp startTimestamp = Timestamp.now();
+  //     DateTime currentDate = startTimestamp.toDate().subtract(Duration(hours: 3));
+  //     startTimestamp = Timestamp.fromDate(currentDate);
+
+  //     // Fetching orders
+  //     // List<CabOrderModel> orders = [];
+  //     await FirebaseFirestore.instance
+  //         .collection(RIDESORDER)
+  //         .where('status', whereIn: [ORDER_STATUS_PLACED, ORDER_STATUS_DRIVER_REJECTED])
+  //         .where('createdAt', isGreaterThan: startTimestamp)
+  //         .get()
+  //         .then((value) async {
+  //       print('Orders fetched: ${value.docs.length}');
+  //       await Future.forEach(value.docs, (QueryDocumentSnapshot<Map<String, dynamic>> element) {
+  //         try {
+  //           // Parse each order
+  //           orders.add(CabOrderModel.fromJson(element.data()));
+  //           print('Parsed orders: ${orders.length}');
+  //         } catch (e, s) {
+  //           print('Error parsing order ${element.id}: $e\nStackTrace: $s');
+  //         }
+  //       });
+  //     });
+
+  //     // Processing orders
+  //     for (CabOrderModel orderModel in orders) {
+  //       try {
+  //         print('Order ID: ${orderModel.id}');
+  //         orderModel.trigger_delevery = Timestamp.now();
+  //         print('Trigger Delivery: ${orderModel.trigger_delevery}');
+
+  //         // Converting to JSON for serialization
+  //         Map<String, dynamic> serializedData = orderModel.toJson();
+  //         print('Serialized Data: $serializedData');
+
+  //         // Update Firestore with serialized data
+  //         await FirebaseFirestore.instance
+  //             .collection(RIDESORDER)
+  //             .doc(orderModel.id)
+  //             .set(serializedData, SetOptions(merge: true));
+  //         print('Order ${orderModel.id} updated successfully.');
+  //       } catch (e) {
+  //         print('Error processing order ${orderModel.id}: $e');
+  //       }
+  //     }
+  //     await Future.delayed(Duration(seconds: 10));
+  //   }
+  // }
+
+    // getData() async {
+  //   while (true) {
+  //     await FirebaseFirestore.instance.collection(Setting).doc("DriverNearBy").get().then((value) {
+  //       selectedMapType = value.data()!['selectedMapType'].toString();
+  //     });
+  //     if (selectedMapType == 'osm') {
+  //       setState(() {
+  //         mapOsmController = osmflutter.MapController(initPosition: osmflutter.GeoPoint(latitude: 20.9153, longitude: -100.7439), useExternalTracking: false); //OSM
+  //       });
+  //     }
+
+  //     setIcons();
+
+  //     driverStream = FireStoreUtils().getDriver(MyAppState.currentUser!.userID);
+  //     driverStream.listen((event) {
+  //       setState(() => _driverModel = event);
+  //       setState(() => MyAppState.currentUser = _driverModel);
+
+  //       if (selectedMapType == "osm") {
+  //         getOSMPolyline();
+  //       } else {
+  //         getDirections();
+  //       }
+
+  //       if (_driverModel!.isActive) {
+  //         if (_driverModel!.ordercabRequestData != null) {
+  //           print("---->ordercabRequestData${_driverModel!.ordercabRequestData!.id}");
+  //           _driverModel!.ordercabRequestData = null;
+  //         }
+  //         if (orders.isNotEmpty) {
+  //           _driverModel!.ordercabRequestData = orders.first;
+  //         }
+  //         if (_driverModel!.ordercabRequestData != null) {
+  //           currentCabOrderID = _driverModel!.ordercabRequestData!.id;
+  //         }
+  //       }
+  //       if (_driverModel!.inProgressOrderID != null) {
+  //         print('---> True');
+  //         getCurrentOrder();
+  //       }
+  //       if (_driverModel!.ordercabRequestData == null) {
+  //         if(selectedMapType == "osm"){
+  //           if (mounted && osmMarkers.isNotEmpty && mapOsmController.initPosition != null) {
+  //             setState(() {
+  //               osmMarkers.clear();
+  //               mapOsmController.clearAllRoads();
+  //             });
+  //           }
+  //         }else{
+  //           if (mounted) {
+  //             setState(() {
+  //               _markers.clear();
+  //               polyLines.clear();
+  //             });
+  //           }
+  //         }
+  //       }
+  //       // setState(() {});
+  //     });
+
+  //     setState(() {
+  //       isLoading = false;
+  //     });
+      
+  //     await Future.delayed(Duration(seconds: 10));
+  //   }
+  // }

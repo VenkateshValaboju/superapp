@@ -1,0 +1,144 @@
+{
+  "project_info": {
+    "project_number": "471897409487",
+    "firebase_url": "https://sharehands-ce37a-default-rtdb.firebaseio.com",
+    "project_id": "sharehands-ce37a",
+    "storage_bucket": "sharehands-ce37a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471897409487:android:eb1fbe9e8d3b405d9d34ba",
+        "android_client_info": {
+          "package_name": "com.sharehand.driver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUjtJ2pG43wEmkZ-cHqKsdDHtYPcPOLL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471897409487:android:db7f4b7fc848f09c9d34ba",
+        "android_client_info": {
+          "package_name": "com.sharehand.provider"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUjtJ2pG43wEmkZ-cHqKsdDHtYPcPOLL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471897409487:android:a299e8d432bceae49d34ba",
+        "android_client_info": {
+          "package_name": "com.sharehand.store"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUjtJ2pG43wEmkZ-cHqKsdDHtYPcPOLL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471897409487:android:d2ccb833cb72d9fb9d34ba",
+        "android_client_info": {
+          "package_name": "com.sharehands.customer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUjtJ2pG43wEmkZ-cHqKsdDHtYPcPOLL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471897409487:android:8e35e6694b490a029d34ba",
+        "android_client_info": {
+          "package_name": "com.sharehands.provider"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUjtJ2pG43wEmkZ-cHqKsdDHtYPcPOLL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471897409487:android:9058c5a6e73949969d34ba",
+        "android_client_info": {
+          "package_name": "com.sharehands.store"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUjtJ2pG43wEmkZ-cHqKsdDHtYPcPOLL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471897409487:android:9f8df8e54abe4b1d9d34ba",
+        "android_client_info": {
+          "package_name": "com.sharehands.worker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUjtJ2pG43wEmkZ-cHqKsdDHtYPcPOLL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
